@@ -35,7 +35,7 @@ const fetchTickets = async function () {
 
 
 
-  // Task 3 - Display Tickets Dynamically on the Page
+// Task 3 - Display Tickets Dynamically on the Page
 
   const displayTickets = function (tickets) {
     const ticketContainer = document.getElementById("ticket-container");
