@@ -24,6 +24,12 @@ const fetchTickets = async function () {
       document.getElementById("ticket-container").innerHTML = `
         <p>Error loading tickets. Please try again later.</p>`;
     }
+
+// Task 4: Ensure Cleanup
+    finally {
+        console.log("Fetch attempt completed"); // Example cleanup action
+      }
+
   };
 
 
@@ -46,4 +52,7 @@ const fetchTickets = async function () {
     `).join('');
   };
 
-  
+// Task 5 - Call fetchTickets to load tickets on page load
+
+fetchTickets();
+
