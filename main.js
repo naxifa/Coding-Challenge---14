@@ -6,7 +6,7 @@ const fetchTickets = async function () {
     try {
       const res = await fetch("https://jsonplaceholder.typicode.com/posts");
       if (!res.ok) {
-        throw new Error("Failed to fetch ticket data!");
+        throw new Error("Failed to fetch ticket data");
       }
   
       const tickets = await res.json();
@@ -20,7 +20,7 @@ const fetchTickets = async function () {
     catch (error) {
       console.log(error); // Log the error to the console
   
-      // Display a user-friendly error message
+      // user-friendly error message
       document.getElementById("ticket-container").innerHTML = `
         <p>Error loading tickets. Please try again later.</p>`;
     }
@@ -28,7 +28,7 @@ const fetchTickets = async function () {
 // Task 4: Ensure Cleanup
 
     finally {
-        console.log("Fetch attempt completed"); // Example cleanup action
+        console.log("Fetch attempt completed"); 
       }
 
   };
