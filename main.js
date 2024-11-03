@@ -26,6 +26,7 @@ const fetchTickets = async function () {
     }
 
 // Task 4: Ensure Cleanup
+
     finally {
         console.log("Fetch attempt completed"); // Example cleanup action
       }
@@ -44,15 +45,15 @@ const fetchTickets = async function () {
     // Use map to generate HTML for each ticket and join to a single string
     ticketContainer.innerHTML = tickets.map(ticket => `
       <div>
+
         <h3>Ticket ID: ${ticket.id}</h3>
         <p><strong>Customer Name:</strong> User ${ticket.userId}</p>
         <p><strong>Issue Description:</strong> ${ticket.title}</p>
         <p><strong>Details:</strong> ${ticket.body}</p>
+
       </div>
     `).join('');
   };
-
-// Task 5 - Call fetchTickets to load tickets on page load
 
 fetchTickets();
 
