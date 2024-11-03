@@ -26,4 +26,6 @@ const fetchTickets = async function () {
     }
   };
 
-  
+
+
+  // Task 3 - Display Tickets Dynamically on the Page
